@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .photo-container .images {
+  display: flex;
+  gap: 5px;
+}
+.main .photo-container .images img {
+  width: 40%;
+}
+.main .photo-container .images .grayscale {
+  filter: grayscale();
+}
+.main .photo-container .images .sepia {
+  filter: sepia();
+}
+.main .photo-container .images .saturate {
+  filter: saturate(50%);
+}
+.main .photo-container .images .hue-rotate {
+  filter: hue-rotate(90deg);
+}
+.main .photo-container .images .invert {
+  filter: invert();
+}
+.main .photo-container .images .contrast {
+  filter: contrast(50%);
+}

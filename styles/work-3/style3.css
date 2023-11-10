@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+.main .blue_text {
+  text-decoration: blue wavy underline 1.2px;
+}
+.main .pink_text {
+  text-decoration: pink dotted underline 1.2px;
+}
+.main .green_text {
+  text-decoration: green dashed underline 1.2px;
+}
+.main .red_text {
+  text-decoration: red double underline 1.2px;
+}

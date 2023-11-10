@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .gradient_linier_full,
+.main .gradient_flags,
+.main .gradeint_radial_nFull,
+.main .gradient_radial_flags,
+.main .repeating {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.main .gradient_linier_full div {
+  width: 150px;
+  height: 150px;
+  border: 1px black solid;
+}
+.main .gradient_flags div,
+.main .gradient_radial_flags div {
+  width: 230px;
+  height: 150px;
+  border: 1px black solid;
+}
+.main .gradient_linier_full .gradient_linear1 {
+  background-image: linear-gradient(to bottom, #F2DB39, #FFF);
+}
+.main .gradient_linier_full .gradient_linear2 {
+  background-image: linear-gradient(to right, #F2DB39, #FFF);
+}
+.main .gradient_linier_full .gradient_linear3 {
+  background-image: linear-gradient(to left, #F2DB39, #FFF);
+}
+.main .gradient_flags .gradient_flag1 {
+  background-image: linear-gradient(to bottom, #FF0000 33.333%, #FFF 33.333% 66.666%, #FF0000 66.666% 100%);
+}
+.main .gradient_flags .gradient_flag2 {
+  background-image: linear-gradient(to right, #FF0000 8%, #0000FF 50% 70%, #FFF 89% 90%, #FF0000 99% 100%);
+}
+.main .gradeint_radial_nFull .radial1_square {
+  width: 150px;
+  height: 150px;
+  border: 1px black solid;
+  background-image: radial-gradient(80% 80%, #61dcfb, #098ABB);
+}
+.main .gradeint_radial_nFull .radial2_square {
+  width: 310px;
+  height: 150px;
+  border: 1px black solid;
+  background-image: radial-gradient(80% 80%, #61dcfb, #098ABB);
+}
+.main .gradient_radial_flags .flag1_radial {
+  background-image: radial-gradient(circle closest-side at 20px 20px, #61dcfb, #098ABB);
+}
+.main .gradient_radial_flags .flag2_radial {
+  background-image: radial-gradient(circle, #333333 5%, #FFF 10% 17%, #008001 20%);
+}
+.main .repeating_gradient {
+  display: flex;
+  flex-direction: column;
+}
+.main .repeating_gradient .grad_repeating1 {
+  border: 1px black solid;
+  width: 472px;
+  height: 100px;
+  background-image: repeating-linear-gradient(black, black 3px, white 3px, white 6px);
+}
+.main .repeating_gradient .grad_repeating2 {
+  border: 1px black solid;
+  width: 472px;
+  height: 50px;
+  background-image: repeating-linear-gradient(45deg, red, red 3px, white 3px, white 6px);
+}
+.main .repeating_gradient .grad_repeating3 {
+  border: 1px black solid;
+  width: 472px;
+  height: 472px;
+  background-image: repeating-radial-gradient(circle, black, black 3px, white 3px, white 6px);
+}

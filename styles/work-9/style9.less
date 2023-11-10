@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .photo-container{
+        .images{
+            display:flex;
+            gap:5px;
+            img{
+                width: 40%;
+            }
+            .grayscale {
+                filter: grayscale();
+            }
+            .sepia {
+                filter: sepia();
+            }
+            .saturate {
+                filter: saturate(50%);
+            }
+            .hue-rotate {
+                filter: hue-rotate(90deg);
+            }
+            .invert {
+                filter: invert();
+            }
+            .contrast {
+                filter: contrast(50%);
+            }
+        }
+    }
+}

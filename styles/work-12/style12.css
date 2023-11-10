@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+@media screen and (min-width: 1050px) {
+  .main div {
+    background-color: blue;
+    color: white;
+    width: 220px;
+    height: 300px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 1050px) and (min-width: 780px) {
+  .main div {
+    background-color: blue;
+    color: white;
+    width: 350px;
+    height: 350px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .main div {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+  }
+}

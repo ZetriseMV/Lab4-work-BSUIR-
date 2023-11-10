@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gradient_linier_full, .gradient_flags, .gradeint_radial_nFull, .gradient_radial_flags, .repeating {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .gradient_linier_full div {
+        width: 150px;
+        height: 150px;
+        border: 1px black solid;
+    }
+    .gradient_flags div, .gradient_radial_flags div {
+        width: 230px;
+        height: 150px;
+        border: 1px black solid;
+    }
+    .gradient_linier_full{
+        .gradient_linear1 {
+            background-image: linear-gradient(to bottom, #F2DB39, #FFF);
+        }
+        .gradient_linear2 {
+            background-image: linear-gradient(to right, #F2DB39, #FFF);
+        }
+        .gradient_linear3 {
+            background-image: linear-gradient(to left, #F2DB39, #FFF);
+        }
+    }
+    .gradient_flags{
+        .gradient_flag1{
+            background-image: linear-gradient(to bottom, #FF0000 33.333%, #FFF 33.333% 66.666%, #FF0000 66.666% 100%);
+        }
+        .gradient_flag2{
+            background-image: linear-gradient(to right, #FF0000 8%, #0000FF 50% 70%, #FFF 89% 90%, #FF0000 99% 100%);
+        }
+    }
+    .gradeint_radial_nFull{
+        .radial1_square {
+            width: 150px;
+            height: 150px;
+            border: 1px black solid;
+            background-image: radial-gradient(80% 80%, #61dcfb , #098ABB);
+        }
+        .radial2_square {
+            width: 310px;
+            height: 150px;
+            border: 1px black solid;
+            background-image: radial-gradient(80% 80%, #61dcfb , #098ABB);
+        }
+    }
+    .gradient_radial_flags{
+        .flag1_radial{
+            background-image: radial-gradient(circle closest-side at 20px 20px, #61dcfb, #098ABB);
+        }
+        .flag2_radial {
+            background-image: radial-gradient(circle, #333333 5%, #FFF 10% 17%, #008001 20%);
+        }
+    }
+    .repeating_gradient {
+        display: flex;
+        flex-direction: column;
+        .grad_repeating1 {
+            border: 1px black solid;
+            width: 472px;
+            height: 100px;
+            background-image: repeating-linear-gradient(black, black 3px, white 3px, white 6px);
+        }
+        .grad_repeating2 {
+            border: 1px black solid;
+            width: 472px;
+            height: 50px;
+            background-image: repeating-linear-gradient(45deg, red, red 3px, white 3px, white 6px);
+        }
+        .grad_repeating3 {
+            border: 1px black solid;
+            width: 472px;
+            height: 472px;
+            background-image: repeating-radial-gradient(circle, black, black 3px, white 3px, white 6px);
+        }
+    }
+}

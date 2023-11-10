@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.main .shadow-text {
+  text-shadow: grey 8px 11px ;
+}
+.main .blur-text {
+  text-shadow: grey 8px 11px 3px;
+}
+.main .shadow_two_lines {
+  text-shadow: red 5px 5px 2px, blue -2px -5px 2px;
+}
+.main .pressed-text {
+  color: #E1D7BC;
+  text-shadow: -0.1px -0.1px #000, 0 0.1px 0 #444;
+}
+.main .volume-text {
+  color: #E1D7BC;
+  text-shadow: -0.3px -0.3px #a49f8f, -0.4px -0.4px #848074, -0.1px -0.1px #000, 0 0.1px 0 #444;
+}
+.main .contour-text {
+  color: #E1D7BC;
+  text-shadow: 0.3px 0.3px black, -0.3px -0.3px black;
+}

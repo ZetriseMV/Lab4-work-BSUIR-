@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: PoiretOne;
+  src: url(fonts/PoiretOne-Regular.ttf);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.main h3 {
+  font-weight: bold;
+  font-family: PoiretOne;
+  text-align: center;
+}
+.main .pink,
+.main .blue,
+.main .green {
+  width: 90%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.main .main-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.main .main-cards .card {
+  background-color: #FFD3C6;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main-cards .card p {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 0 30px 30px;
+  text-align: center;
+}
+.main .main-cards .card .pink {
+  background-color: #EEAEEF;
+}
+.main .main-cards .card .blue {
+  background-color: #4B9BD1;
+}
+.main .main-cards .card .green {
+  background-color: #67C45A;
+}

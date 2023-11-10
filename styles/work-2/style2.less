@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .event_click:hover{
+        cursor: pointer;
+    }
+    .event_cursorLoad:hover{
+        cursor: progress;
+    }
+    .event_load:hover{
+        cursor: wait;
+    }
+    .event_imageCustomize:hover{
+        cursor:url('../../Utils/images/customize-cursor.png'),pointer;
+    }
+}
+.main div{
+    border: 1px black solid;
+    height: 200px;
+    width: 200px;
+}

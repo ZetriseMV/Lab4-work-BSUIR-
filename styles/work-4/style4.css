@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+.main div {
+  width: 20%;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main div:hover {
+  overflow: visible;
+  white-space: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+.main .both {
+  resize: both;
+}
+.main .none {
+  resize: none;
+}
+.main .horizontal {
+  resize: horizontal;
+}
+.main .vertical {
+  resize: vertical;
+}

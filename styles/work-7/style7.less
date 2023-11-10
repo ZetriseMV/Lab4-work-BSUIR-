@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div{
+        width: 200px;
+        height: 200px;
+        border: 1px black solid;
+        margin: 0 30px 80px;
+    }
+    .block_shadow_blur{
+        box-shadow: 20px 20px 15px grey;
+    }
+    .block_shadow_secondary{
+        box-shadow: 30px 30px 15px grey, -30px -30px 15px grey;
+    }
+    .block_shadow_inside{
+        box-shadow: inset 5px 5px 10px grey;
+    }
+}
